@@ -23,18 +23,97 @@ html, body {
     width: 960px;
     height: auto;
     margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #board {
-    margin: 0 auto;
-    border-collapse: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-#board tr td {
-  width: 90px;
-  height: 90px;
-  margin: 4px;
-  border: 2px solid #e9c46a;
-  border-radius: 4px;
-  display: inline-block;
+#board .row {
+    display: flex;
+    flex-direction: row;
 }
+
+#board .row .cell {
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+    border-radius: 4px;
+    border: 1px solid #e76f51;
+}
+
+#robot {
+    width: 30px;
+    height: 30px;
+    background: #2a9d8f;
+    margin: 9px;
+    border-radius: 4px;
+}
+#robot[facing="NORTH"] {
+    border-top: 3px solid #e9c46a;
+}
+
+#robot[facing="EAST"] {
+    border-right: 3px solid #e9c46a;
+}
+
+#robot[facing="SOUTH"] {
+    border-bottom: 3px solid #e9c46a;
+}
+
+#robot[facing="WEST"] {
+    border-left: 3px solid #e9c46a;
+}
+
+#console {
+    margin-top: 50px;
+    width: 100%;
+   
+}
+
+#console #output {
+    min-height: 150px;
+    height: 150px;
+    overflow-y: scroll;
+
+    border: 1px solid #f4a261;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#console #output .log-line {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#console #output .log-line.command {
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+}
+
+#console #input {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#console #input #command-input {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #f4a261;
+    margin-top: 4px;
+    color: #e9c46a;
+}
+
+#console #input #command-input:focus {
+    outline: none!important;
+}
+
