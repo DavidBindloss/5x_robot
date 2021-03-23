@@ -1,0 +1,12 @@
+{
+  "name": "5x_robot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/DavidBindloss/5x_robot.git",
+  "author": "David <d.bindloss@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "^7.13.12",
+    "babel": "^6.23.0"
+  }
+}

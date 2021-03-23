@@ -1,0 +1,23 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+/*
+    #264653 - blue
+    #2a9d8f - green
+    #e9c46a - yellow
+    #f4a261 - light orange
+    #e76f51 - dark orange
+*/
+
+html, body {
+    background: #264653;
+    font-family: "Nunito", sans-serif;
+    color: white;
+}
+
+#content {
+    margin: 0 auto;
+    width: 960px;
+    height: auto;
+    margin-top: 50px;
+}
