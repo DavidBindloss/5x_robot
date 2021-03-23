@@ -8,6 +8,9 @@ html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,ifr
     #f4a261 - light orange
     #e76f51 - dark orange
 */
+* {
+    box-sizing: border-box;
+}
 
 html, body {
     background: #264653;
@@ -20,4 +23,18 @@ html, body {
     width: 960px;
     height: auto;
     margin-top: 50px;
+}
+
+#board {
+    margin: 0 auto;
+    border-collapse: inherit;
+}
+
+#board tr td {
+  width: 90px;
+  height: 90px;
+  margin: 4px;
+  border: 2px solid #e9c46a;
+  border-radius: 4px;
+  display: inline-block;
 }
